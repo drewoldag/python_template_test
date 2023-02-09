@@ -10,4 +10,4 @@ Welcome to example_project's documentation!
    :hidden:
 
    Home page <self>
-   API Reference <../../autoapi/index>
+   API Reference <autoapi/index>
