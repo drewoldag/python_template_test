@@ -10,4 +10,4 @@ Welcome to example_project's documentation!
    :hidden:
 
    Home page <self>
-   API reference <generated/example_project>
+   ../../autoapi/example_project/index

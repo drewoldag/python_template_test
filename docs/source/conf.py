@@ -7,6 +7,8 @@
 import os
 import sys
 
+import autoapi
+
 # Define path to the code to be documented **relative to where conf.py (this file) is kept**
 sys.path.insert(0, os.path.abspath('../../src/'))
 
@@ -26,7 +28,8 @@ extensions = [
     'sphinx.ext.autosummary',
     'sphinx.ext.mathjax',
     'sphinx.ext.napoleon',
-    'sphinx.ext.viewcode']
+    'sphinx.ext.viewcode',
+    'autoapi.extension']
 
 templates_path = ['_templates']
 exclude_patterns = ['docs/source/_templates']
@@ -39,6 +42,9 @@ html_show_sourcelink = False  # Remove 'view source code' from top of page (for 
 autodoc_inherit_docstrings = True  # If no docstring, inherit from base class
 add_module_names = False # Remove namespaces from class/method signatures
 
+autoapi_type = 'python'
+autoapi_dirs = ['./src']
+autoapi_add_toc_tree_entry = False
 
 # -- Options for HTML output -------------------------------------------------
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#options-for-html-output
