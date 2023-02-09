@@ -22,7 +22,6 @@ release = 'v0.1'
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#general-configuration
 
 extensions = [
-    'sphinx.ext.autodoc',
     'sphinx.ext.mathjax',
     'sphinx.ext.napoleon',
     'sphinx.ext.viewcode',
@@ -32,12 +31,7 @@ templates_path = []
 exclude_patterns = []
 
 master_doc = 'index'  # This assumes that sphinx-build is called from the root directory
-autodoc_member_order = 'bysource'
-autodoc_typehints = 'both'
-autosummary_generate = True  # Turn on sphinx.ext.autosummary
-autoclass_content = "both"  # Add __init__ doc (ie. params) to class summaries
 html_show_sourcelink = False  # Remove 'view source code' from top of page (for html, not python)
-autodoc_inherit_docstrings = True  # If no docstring, inherit from base class
 add_module_names = False # Remove namespaces from class/method signatures
 
 autoapi_type = 'python'
