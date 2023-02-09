@@ -31,7 +31,7 @@ extensions = [
 templates_path = []
 exclude_patterns = []
 
-master_doc = 'docs/source/index'  # This assumes that sphinx-build is called from the root directory
+master_doc = 'index'  # This assumes that sphinx-build is called from the root directory
 autodoc_member_order = 'bysource'
 autodoc_typehints = 'both'
 autosummary_generate = True  # Turn on sphinx.ext.autosummary
@@ -41,7 +41,7 @@ autodoc_inherit_docstrings = True  # If no docstring, inherit from base class
 add_module_names = False # Remove namespaces from class/method signatures
 
 autoapi_type = 'python'
-autoapi_dirs = ['./src']
+autoapi_dirs = ['../../src']
 autoapi_add_toc_tree_entry = False
 autoapi_member_order = 'bysource'
 
