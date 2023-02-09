@@ -8,7 +8,7 @@ import os
 import sys
 
 # Define path to the code to be documented **relative to where conf.py (this file) is kept**
-sys.path.insert(0, os.path.abspath('../../src/'))
+sys.path.insert(0, os.path.abspath('../src/'))
 
 # -- Project information -----------------------------------------------------
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#project-information
@@ -41,7 +41,7 @@ autodoc_inherit_docstrings = True  # If no docstring, inherit from base class
 add_module_names = False # Remove namespaces from class/method signatures
 
 autoapi_type = 'python'
-autoapi_dirs = ['../../src']
+autoapi_dirs = ['../src']
 autoapi_add_toc_tree_entry = False
 autoapi_member_order = 'bysource'
 
@@ -49,8 +49,6 @@ autoapi_member_order = 'bysource'
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#options-for-html-output
 
 html_theme = 'alabaster'
-html_static_path = ['_static']
-
 html_sidebars = { '**': ['globaltoc.html', 'relations.html', 'searchbox.html'], }
 
 

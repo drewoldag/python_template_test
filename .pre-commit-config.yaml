@@ -73,10 +73,8 @@ repos:
           [
             "-T",
             "-E",
-            "-c",
-            "docs/source",
             "-b", # Flag to select which builder to use
             "html", # Use the HTML builder
             ".", # Source directory of documents
-            "docs/_build/html", # Output directory for rendered documents.
+            "build/html", # Output directory for rendered documents.
           ]
