@@ -20,3 +20,13 @@ def primary(alpha:int, beta:int = 5) -> int:
         The Drewtonian for inputs `alpha` and `beta`
     """
     return alpha * beta
+
+def secondary() -> int:
+    """Does nothing
+
+    Returns
+    -------
+    int
+        The nubmer 10.
+    """
+    return 10
